@@ -1,3 +1,9 @@
+CS-300 Data Structures and Algorithms
+Advising Assistance Program Summary
+
+The advising assistance project involved developing a software solution for Academic Advising at ABCU to load, validate, search, and sort course catalog data from an external text file. The core problem was ensuring advisors could instantly look up course prerequisites while also printing out an entire catalog in sorted alphanumeric order without performance lag as the catalog expanded. My approach centered on evaluating vectors, hash tables, and binary search trees to balance runtime efficiency against memory overhead. While hash tables offered near instant single lookups, they lacked natural ordering, and vectors required sorting overhead. I chose a binary search tree because it provided logarithmic search times and allowed seamless alphanumeric catalog printing through in-order traversal without needing extra sorting routines. The primary roadblocks I encountered were validating inconsistent comma-delimited input lines and preventing segmentation faults during recursive tree insertions and traversals. I resolved these issues by implementing strict token validation checks on file ingest and carefully tracing pointer references to handle null edge cases. This project fundamentally expanded my approach to software engineering by showing me that selecting the right data structure before writing code solves half the design problem upfront. Moving forward, my code is significantly more maintainable, readable, and adaptable because I separate the internal data storage structure completely from the user-facing interface, allowing future changes to happen cleanly without breaking application logic.
+
+
 CS-255 System Analysis and Design
 DriverPass Project Summary
 
